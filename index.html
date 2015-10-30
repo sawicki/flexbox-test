@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Flexbox</title>
+        <style type="text/css">
+		.flexbox-container {
+			padding: 20px;
+			background: #eee;
+
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex-wrap;
+            width:700px;
+
+		}
+
+		.flexbox-container > div {
+			width: 50%;
+			min-height: 200px;
+			background: #fff;
+			padding: 10px;
+            flex-flow:row wrap;
+		}
+
+		.flexbox-container > div:first-child {
+			margin-right: 20px;
+		}
+        input {width:100px;
+            display:inline-block;
+
+    }
+        label{width:100px;
+            display:inline-block;
+
+
+        }
+
+	</style>
+    </head>
+    <body>
+        <div class="flexbox-container">
+            <div class="">
+                Test 1<br>
+                <label for="">Input One</label>
+                <input type="text" id="name" value="">
+            </div>
+            <div class="">
+                Test 2
+            </div>
+        </div>
+    </body>
+</html>
